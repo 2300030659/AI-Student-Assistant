@@ -1,22 +1,22 @@
-# AI Powered Student Assistant (MERN + AI)
+# AI Powered Student Assistant (MERN + AI Integration)
 
-## Overview
+## Project Overview
 
-AI Powered Student Assistant is a MERN-based web application that allows students to ask questions, generate MCQs, summarize text, and improve writing quality using AI.
+AI Powered Student Assistant is a MERN-based web application that allows users to input questions or text and receive AI-generated responses based on different task modes.
 
-The application demonstrates integration of an LLM API with a MERN stack and uses structured prompts to control AI responses.
+The application demonstrates integration of an AI service into a MERN stack and uses structured prompts to control AI output.
 
 ---
 
 ## Features
 
 * Explain academic concepts
-* Generate MCQs
+* Generate Multiple Choice Questions (MCQs)
 * Summarize long text
 * Improve writing quality
-* Structured AI prompts
-* Loading animation
-* Modern UI
+* Loading animation while AI generates responses
+* Structured AI prompts for reliable responses
+* Modern responsive UI
 
 ---
 
@@ -26,15 +26,27 @@ Frontend
 
 * React
 * CSS
+* Axios
 
 Backend
 
 * Node.js
-* Express
+* Express.js
 
 AI Integration
 
 * Groq API (Llama Model)
+
+Deployment
+
+* Frontend: Vercel
+
+---
+
+## Live Demo
+
+Frontend:
+https://ai-student-assistant-omega.vercel.app
 
 ---
 
@@ -42,16 +54,20 @@ AI Integration
 
 AI-Student-Assistant
 
-```
 client/
-  src/
-    components/
-    services/
+
+```id="struct01"
+src/
+components/
+services/
+```
 
 server/
-  controllers/
-  routes/
-  services/
+
+```id="struct02"
+controllers/
+routes/
+services/
 ```
 
 ---
@@ -62,10 +78,10 @@ POST /api/ai/generate
 
 Example Request:
 
-```
+```id="req01"
 {
- "prompt":"Explain JavaScript closures",
- "mode":"explain"
+ "prompt": "Explain JavaScript closures",
+ "mode": "explain"
 }
 ```
 
@@ -73,14 +89,16 @@ Example Request:
 
 ## Prompt Engineering Approach
 
-Prompts are structured with:
+The application does not send raw user input directly to the AI model.
+
+Each prompt includes:
 
 * Role definition
-* Task instructions
+* Context for the AI
 * Output constraints
 * Guardrails to reduce hallucination
 
-Example prompt:
+Example structured prompt:
 
 You are an experienced university instructor.
 Explain the following concept to a beginner student.
@@ -92,7 +110,13 @@ Concept: JavaScript Closures
 
 ## Setup Instructions
 
-Backend
+Clone the repository:
+
+```
+git clone https://github.com/2300030659/AI-Student-Assistant.git
+```
+
+### Backend Setup
 
 ```
 cd server
@@ -100,7 +124,7 @@ npm install
 node server.js
 ```
 
-Frontend
+### Frontend Setup
 
 ```
 cd client
@@ -112,7 +136,7 @@ npm start
 
 ## Environment Variables
 
-server/.env
+Create `.env` inside server folder.
 
 ```
 PORT=5000
@@ -123,7 +147,8 @@ GROQ_API_KEY=your_api_key
 
 ## Future Improvements
 
-* Authentication
-* Chat history
-* Database storage
-* Improved UI
+* Chat interface for AI responses
+* User authentication
+* Save query history
+* Database integration
+* Backend deployment
