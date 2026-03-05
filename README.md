@@ -1,3 +1,10 @@
+![React](https://img.shields.io/badge/Frontend-React-blue)
+![Node](https://img.shields.io/badge/Backend-Node.js-green)
+![Express](https://img.shields.io/badge/Framework-Express-black)
+![AI](https://img.shields.io/badge/AI-Groq%20API-orange)
+![Deployment](https://img.shields.io/badge/Deployment-Vercel-black)
+![License](https://img.shields.io/badge/Project-Student%20Assignment-blueviolet)
+
 # AI Powered Student Assistant (MERN + AI Integration)
 
 ## Project Overview
@@ -49,6 +56,10 @@ Frontend:
 https://ai-student-assistant-omega.vercel.app
 
 ---
+
+## Application Screenshot
+
+![AI Student Assistant](screenshot/app.png)
 
 ## Project Structure
 
