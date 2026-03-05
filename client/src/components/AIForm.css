@@ -1,0 +1,217 @@
+/* Page Background */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg,#eef2ff,#f8fafc);
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Main Card */
+
+.container {
+  max-width: 720px;
+  margin: 60px auto;
+  padding: 35px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+
+/* Card Title */
+
+.title {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+
+/* Textarea */
+
+.input-box {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  resize: none;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.input-box:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37,99,235,0.2);
+}
+
+
+/* Dropdown */
+
+.dropdown {
+  width: 100%;
+  padding: 12px;
+  margin-top: 18px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  outline: none;
+}
+
+.dropdown:focus {
+  border-color: #2563eb;
+}
+
+
+/* Generate Button */
+
+.generate-btn {
+  width: 100%;
+  margin-top: 22px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg,#2563eb,#1d4ed8);
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.generate-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(37,99,235,0.3);
+}
+
+
+/* Loading Spinner */
+
+.spinner-container{
+  text-align:center;
+  margin-top:18px;
+}
+
+.spinner{
+  width:32px;
+  height:32px;
+  border:4px solid #e5e7eb;
+  border-top:4px solid #2563eb;
+  border-radius:50%;
+  animation:spin 0.9s linear infinite;
+  margin:auto;
+}
+
+@keyframes spin{
+  0%{ transform:rotate(0deg); }
+  100%{ transform:rotate(360deg); }
+}
+
+
+/* Result Box */
+
+.result-box {
+  margin-top: 28px;
+  background: #f8fafc;
+  padding: 22px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  text-align:left;
+}
+
+
+/* MCQ Question Block */
+
+.question-block {
+  margin-bottom: 22px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.question-block h4 {
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+
+/* Options List */
+
+.question-block ul {
+  padding-left: 18px;
+  margin-bottom: 10px;
+}
+
+.question-block li {
+  margin-bottom: 4px;
+}
+
+
+/* Correct Answer */
+
+.answer {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+
+/* Copy Button */
+
+.copy-btn{
+  float:right;
+  margin-bottom:12px;
+  padding:6px 12px;
+  border:none;
+  background:#22c55e;
+  color:white;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:13px;
+}
+
+.copy-btn:hover{
+  background:#16a34a;
+}
+
+.chat-response{
+  background:#ffffff;
+  border-left:4px solid #2563eb;
+}
+
+.chat-response p{
+  line-height:1.6;
+  font-size:15px;
+}
+
+.typing{
+  display:flex;
+  justify-content:center;
+  gap:5px;
+  margin-top:15px;
+}
+
+.typing span{
+  width:8px;
+  height:8px;
+  background:#2563eb;
+  border-radius:50%;
+  animation:blink 1.4s infinite both;
+}
+
+.typing span:nth-child(2){
+  animation-delay:0.2s;
+}
+
+.typing span:nth-child(3){
+  animation-delay:0.4s;
+}
+
+@keyframes blink{
+  0%{opacity:.2}
+  20%{opacity:1}
+  100%{opacity:.2}
+}
