@@ -60,6 +60,12 @@ https://ai-student-assistant-omega.vercel.app
 ## Application Screenshot
 
 ![AI Student Assistant](screenshot/app.png)
+![AI Student Assistant](screenshot/app1.png)
+![AI Student Assistant](screenshot/app2.png)
+![AI Student Assistant](screenshot/app3.png)
+![AI Student Assistant](screenshot/app4.png)
+![AI Student Assistant](screenshot/app5.png)
+
 
 ## Project Structure
 
